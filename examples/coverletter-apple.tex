@@ -1,0 +1,140 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[rectangle,noedge,right]{./profile.png}
+\name{Kirill}{Bykov}
+% \position{Software Architect{\enskip\cdotp\enskip}Security Expert}
+\position{Hardware/Software Engineer}
+\address{6 Meisenweg, Kaiserslautern, Germany, 67663}
+
+\mobile{(+49) 177-8697826}
+\email{mrkirillbykov@gmail.com}
+\linkedin{mrkirillbykov}
+\github{kibk}
+\homepage{www.kibk.ru}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Recruitment Team}
+  {Apple\\München, Deutschland}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for New Career in Engineering}
+% How the letter is opened
+\letteropening{Dear Sir or Madam,}
+% How the letter is closed
+\letterclosing{Please feel free to email me or call my phone number. I hope to hear from you soon. \\Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Kirill Bykov~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+I am a passionate about challenges and learning engineering student. I have wide experience in Nanoelectronics, System-on-Chip design and Digital Systems Design/Verification and Synthesis. Enclosed is my resume which more fully details my background and work experience, and how they relate to your position. I am currently in the final semester of my Joint Masters Degree, which is a part of Erasmus Mundus program, undertaking studies in the Kaiserslautern Technical University (Germany), previous year I was studying in Southampton University (UK).
+
+\lettersection{Why Apple?}
+I have dreamed about working at Apple, all the way since I started my Master's Studies. It is global company with a presence in many fields, I believe that being a part of Apple can allow me to further improve my skills as well as develop myself professionally.
+% I spent the summer of 2018 doing an Internship with ARM. I was positively implressed with the environment, people who work there, my relationships with the manager and other team members. Surely I was introduced to Graduate Positions at ARM and to the majority of departments which have them. One of them which stands out to me was Central Engineering. I know how much ARM does in the industry, how much influence it has and the variety of products that ARM developed. All these attract me to this particular opportunity with ARM.
+
+\lettersection{Why Me?}
+I am currently in the middle of my Master's Thesis which is dedicated to validating and analysing RTL implementation of memory controllers (DDR family in particular). I have done myself numerous projects on RTL, including ASICs with Performance/Power constrains and Embedded Processors with HW/SW partitioning, using SystemVerilog/VHDL. As a part of my Digital Systems Design course, we have done a "full" cycle of Simulation, Synthesis and Layout generation for a specific technology process. In addition to this I possess some experience with SVA and I am eager to learn more. When I saw the job opening, I knew it is a perfect opportunity to offer you my skill set.
+% I already have an experience of working with ARM. I finished my first year at the University of Southampton with First Class marks (average 84\%) which shows the level of my interest and abilities in this industry. I firmly believe that I can be a valuable asset to your team. I welcome the opportunity to speak with you about this position and how my experience hopefully be of value to ARM.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
